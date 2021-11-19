@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.ArtNet</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>VL.IO.ArtNet</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
@@ -12,6 +12,9 @@
     <description>Provides support for the ArtNet protocol in VL. Try it with vvvv: http://visualprogramming.net</description>
     <tags>VL, dmx</tags>
 	<license type="expression">LGPL-3.0-only</license>
+	<dependencies>
+      <dependency id="LXProtocols.Artnet" version="3.0.3.7" />
+    </dependencies>
 	<icon>icon\nugeticon.png</icon>
   </metadata>
   <files>
