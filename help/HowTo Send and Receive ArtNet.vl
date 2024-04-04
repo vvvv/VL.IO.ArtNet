@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="F47oZox8XrON2PjXJ19W7N" LanguageVersion="2024.6.0" Version="0.128">
+  <NugetDependency Id="EgRqrAtC4gnQaSz9gOQrL9" Location="VL.CoreLib" Version="2024.6.0" />
+  <Patch Id="EKZfSoOZmz7M6KX42z0oth">
+    <Canvas Id="KtY9fmYEOdsQa1Ix08Xo84" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="V0fMiEMxzylPuIj7Q2WJpW">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="FS3z2BgC736L7ZZ5QAQeWU">
+        <Canvas Id="M4krlgECGd6LQQLikdEiI3" CanvasType="Group">
+          <Pad Id="Ktne9Ya9v4JLUMcsqTunvL" Comment="Enabled" Bounds="138,153,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="95,189,46,19" Id="EfHyy906XCZLypAwFQ2VyK">
+            <p:NodeReference LastCategoryFullName="IO.ArtNet" LastDependency="VL.IO.ArtNet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ArtNet" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="MAbBz1wgkloOA9v0PoUr8v" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VhgzP3L8oi6Nknq8KZSGUe" Name="Local Address" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Fgvgp4qLO78OVeztfTnpyj" Name="Local Port" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KbRgXLepY5kPrKqeoV8XIe" Name="Remote Host" Kind="InputPin" />
+            <Pin Id="CKLZTvsFIdxQNQRVFHQWBt" Name="Remote Port" Kind="InputPin" IsHidden="true" />
+            <Pin Id="AyKqDl4vcHAOFIluxq2Fw1" Name="Enabled" Kind="InputPin" />
+            <Pin Id="DrLQesviJeFMMWeool2rSz" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="BBVR7Qd5wmFLf3A2m7n85P" Name="Data" Kind="OutputPin" />
+            <Pin Id="EbnnU2sQk8tLDEOid7g3n8" Name="Is Open" Kind="OutputPin" />
+          </Node>
+          <Pad Id="BHERgsEe7IZLnZVJHHRcog" Comment="Is Open" Bounds="170,228,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JfU0X172si5Mhx7qEIIyEt" Comment="Remote Host" Bounds="97,124,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="HFYC1Yp1GISN97qTcAMaZc" Comment="Apply" Bounds="204,514,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="115,450,85,19" Id="Tg7NShvdUdNMl0ZudLsUkj">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RandomSpread" />
+            </p:NodeReference>
+            <Pin Id="HCj4bQnDd4qPWjii8hNdmB" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="FBgiFGAWmcWNGqq2hPZNWF" Name="Center" Kind="InputPin" />
+            <Pin Id="EYRxjBtsJGYOhuUelivI7K" Name="Width" Kind="InputPin" />
+            <Pin Id="RaECuQvWzb0O3Q6vser0rT" Name="Seed" Kind="InputPin" DefaultValue="31" />
+            <Pin Id="LkBchY5EEOrQFX1waiFy4a" Name="Count" Kind="InputPin" DefaultValue="512" />
+            <Pin Id="Mbz8Gd1nlwYMkiMIsyftEf" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="128,420,45,19" Id="MTNZ7JtIdEoMy5vBXaisM3">
+            <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="LFO" />
+            </p:NodeReference>
+            <Pin Id="HPYi7VwDX9eOHn2c6wX4JP" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="NEiDlH2119TNSSaiGlI0bZ" Name="Clock" Kind="InputPin" IsHidden="true" />
+            <Pin Id="RoveTm3jc72Nf1LxXsrySf" Name="New Clock" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TOVC1CmrwnHMpesOanunhl" Name="Period" Kind="InputPin" DefaultValue="0.69" />
+            <Pin Id="EklRhXREpHnOEX4ZC5U0BA" Name="Pause" Kind="InputPin" />
+            <Pin Id="RqbyiY7W3kxOJ39fwYB1yJ" Name="Reset" Kind="ApplyPin" />
+            <Pin Id="SVYBWjZKVlWLGlCRFkHQzw" Name="Phase" Kind="OutputPin" />
+            <Pin Id="CSF2Vbp8DfwPRY7qsnrk9W" Name="On New Cycle" Kind="OutputPin" />
+            <Pin Id="Fc2G5u2qQKOMWZc5oBrHbE" Name="Cycles" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="142,681,89,92" Id="DpveNXTYx0XPpOHsM4SmZZ">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ApplicationStatefulRegion" Name="Repeat" />
+            </p:NodeReference>
+            <Pin Id="EfRTDQHOantLq9cohcFzpj" Name="Iteration Count" Kind="InputPin" DefaultValue="512" />
+            <Pin Id="Fmg41EumIHGLPXk1Eue8Ik" Name="Break" Kind="OutputPin" />
+            <Patch Id="KqX1ywOLE0TMO1p0KP6hCD" ManuallySortedPins="true">
+              <Patch Id="FNIZ6uglEdgMrURt2SbYHK" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="FFxidqgLkMlO8ielaZhBTy" Name="Update" ManuallySortedPins="true">
+                <Pin Id="ONinTjn09ChOtYiJIYQxeh" Name="Index" Kind="InputPin" />
+              </Patch>
+              <Patch Id="MVITx6xHZrcLKJIMOI7Yfp" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="154,720,65,19" Id="D0e2wTss928QUgjMD7gVfw">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Random" />
+                </p:NodeReference>
+                <Pin Id="G0McLzMFfogMwTDGHncbXG" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="S737V0wlk0DP9fLQwsepYk" Name="Range" Kind="InputPin" />
+                <Pin Id="TAdUIVLuuxYL504f9Jsjub" Name="Seed" Kind="InputPin" DefaultValue="5" />
+                <Pin Id="QrAWdGbnCqcLTEZwOgutrs" Name="Allow duplicates" Kind="InputPin" />
+                <Pin Id="NzvcNATTVdUL3LJtSURhLC" Name="Enabled" Kind="InputPin" DefaultValue="True" />
+                <Pin Id="QD2aIX6BQWCNMlLQIttAtR" Name="Result" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="E7tieWqFRXzLmUFlLptHw0" Bounds="176,699" />
+            </Patch>
+            <ControlPoint Id="VTixqVvoGyANfqlztKxMyF" Bounds="156,767" Alignment="Bottom" />
+          </Node>
+          <Node Bounds="154,638,44,19" Id="E1yCPro2PHmP8LAJaSbDll">
+            <p:NodeReference LastCategoryFullName="Math.Ranges.Range" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Range (Join)" />
+            </p:NodeReference>
+            <Pin Id="IeUyP2HDPC9PGyDCDTVuCi" Name="From" Kind="InputPin" />
+            <Pin Id="PUbaTAQc2KlMBnQtaEJxvf" Name="To" Kind="InputPin" DefaultValue="255" />
+            <Pin Id="MAUvi5nZRe1Mm0VmG1IKOk" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="GH1nAEqRAE1OuGb8L2E0BK" Comment="Apply" Bounds="177,825,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OcQvQkNxlm0LziGnCXMc7h" Bounds="201,556,302,60" ShowValueBox="true" isIOBox="true" Value="&lt; Send values as floats. Note: ArtNet only has 8bits per channel, so values you send using this node, will be quantized accordingly.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UwjYVzPrdWGOvE91UUNmlr" Bounds="177,867,149,19" ShowValueBox="true" isIOBox="true" Value="&lt; Send values as bytes.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="95,562,65,26" Id="HmeJXGuArqSNmwUCBWK4hR">
+            <p:NodeReference LastCategoryFullName="IO.ArtNet.ArtNet" LastDependency="VL.IO.ArtNet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="ArtNet" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="ArtNet" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="OperationCallFlag" Name="Send" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="OWig54QNZU2NRlwzclRU2q" Name="Input" Kind="StateInputPin" />
+            <Pin Id="QzivgwWXrWfMkVTEasLhHj" Name="Data" Kind="InputPin" />
+            <Pin Id="QMDMjY0DZcxOYfhZ7z3UFw" Name="Remote Host" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IYcNCdWKEb4PphIsnk6MVM" Name="Universe" Kind="InputPin" />
+            <Pin Id="OCWL9dsrnVINyVNnhFq5TA" Name="Remote Port" Kind="InputPin" IsHidden="true" />
+            <Pin Id="P5vUimHE0BvNkCQPaMuVQK" Name="Apply" Kind="InputPin" />
+            <Pin Id="OphLkQGvMG9MPQP6RQbPP0" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="95,853,65,26" Id="UWIqhSg5yuiLcqKH3i5yJo">
+            <p:NodeReference LastCategoryFullName="IO.ArtNet.ArtNet" LastDependency="VL.IO.ArtNet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Send (Byte)" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="LTTRWF71GcEMIbO09QE4jd" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Q2iBTIQAKHzPafU1UfQ8RJ" Name="Data" Kind="InputPin" />
+            <Pin Id="IoHDDHXETFcLnK9Mu6pjXa" Name="Remote Host" Kind="InputPin" IsHidden="true" />
+            <Pin Id="C5jblkz5fM3MBeM2eNqDBM" Name="Universe" Kind="InputPin" />
+            <Pin Id="TH43M9DTJwEMV81O6rtusW" Name="Apply" Kind="InputPin" />
+            <Pin Id="HyrjMd1wGWsLnGIEG1IzVm" Name="Remote Port" Kind="InputPin" IsHidden="true" />
+            <Pin Id="OoCaFERBYlrP2iekgtF5G4" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Overlay Id="BjhSdrPcQIqMNj5dmi1h9G" Name="Send" Bounds="19,365,512,572" />
+          <Node Bounds="660,644,102,19" Id="F9qCgr8rrOuPd4MavRASCf">
+            <p:NodeReference LastCategoryFullName="IO.ArtNet" LastDependency="VL.IO.ArtNet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="UniversereReceiver (Byte)" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="ThHbPBhOFe0M6UCXtVqOsb" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="QLXjX9fg0s9M6lb9eKMtqr" Name="Input" Kind="InputPin" />
+            <Pin Id="L0m3Hyx2UfbNLX2I2AOYYG" Name="Universe" Kind="InputPin" />
+            <Pin Id="IF8Vm7pJj9JQcQPpGkJujo" Name="Result" Kind="OutputPin" />
+            <Pin Id="By7P3dMAqBGNBohi0geRDy" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="661,455,102,19" Id="RCKmW0IQhoQNodJ0C6JeDY">
+            <p:NodeReference LastCategoryFullName="IO.ArtNet" LastDependency="VL.IO.ArtNet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="UniversereReceiver" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="QmDvPKYMeLBPVBI8lw49T4" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VWXPGLvEyIcOsy1yBsfdyS" Name="Input" Kind="InputPin" />
+            <Pin Id="EF1xdBEdKAhLxvCpm1tc5P" Name="Universe" Kind="InputPin" />
+            <Pin Id="QEh7Hh9QW3xNlsJGS8gVXW" Name="Result" Kind="OutputPin" />
+            <Pin Id="NCH8YvvIwoPN1rzZlQ0EfO" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="PDDQYauBHKuMNrvVKX5v8i" Comment="Universe" Bounds="759,613,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="MueGd3bGtbrMFqhEf3axOR" Comment="Universe" Bounds="760,421,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="I2FhldW9OnEQDaU8vzz8jk" Bounds="859,465,302,60" ShowValueBox="true" isIOBox="true" Value="&lt; Receive values as floats. Note: ArtNet only has 8bits per channel, so values you receive using this node, will be quantized accordingly.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Cwx46nfCiqXOnDznq8mWdH" Bounds="853,649,193,25" ShowValueBox="true" isIOBox="true" Value="&lt; Receive values as bytes.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="J4nsEJuPRHGP3DVzKIRfFI" Bounds="653,811,214,81" ShowValueBox="true" isIOBox="true" Value="There are also Reactive versions of the UniverseReceiver nodes available under the &quot;Advanced&quot; aspect!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SxUd6hnREadQOm6RAXIDOy" Comment="" Bounds="662,692,35,95" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BAJWVYTkhrQOOGa5uhHyUv" Comment="" Bounds="663,499,41,95" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="DbhWe7mD5tWNJmhFWgtxzH" Comment="On Data" Bounds="760,493,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RpFCkgiQbFEOoF5zfz7BHs" Comment="On Data" Bounds="759,687,35,35" ShowValueBox="true" isIOBox="true" />
+          <Overlay Id="KVd7LHbQCoGNgUDN0VeMwe" Name="Receive" Bounds="576,363,642,575" />
+          <Pad Id="NQG65WvmZXNLInYmdAmErZ" Bounds="338,117,330,193" ShowValueBox="true" isIOBox="true" Value="Art-Net defaults to communicate on port 6454.&#xD;&#xA;&#xD;&#xA;If you still want to target a different port, use the optional &quot;Remote Port&quot; pin on the ArtNet node.&#xD;&#xA;&#xD;&#xA;If you still need to use a different local port, use the optional &quot;Local Port&quot; pin on the ArtNet node.&#xD;&#xA;&#xD;&#xA;If you need the node to bind to a specific IP address, use the optional &quot;Local Address&quot; pin.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TCwPyC1BhwZLB34HV5VMHt" Comment="Universe" Bounds="205,489,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="G47lhokyhqjObWwtgJbVKX" Comment="Universe" Bounds="179,797,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="IGsxc3XzIwPQYaQb2VPutC" Name="Create" />
+        <Patch Id="DAM2uEhVSKzNJw5oLydzt8" Name="Update" />
+        <ProcessDefinition Id="QdvOhOIGj5WLzktrSrWLrY">
+          <Fragment Id="OHBe8i5ekaOPm64yItHPYs" Patch="IGsxc3XzIwPQYaQb2VPutC" Enabled="true" />
+          <Fragment Id="M8IXJkS86osPt8tHEwZdz0" Patch="DAM2uEhVSKzNJw5oLydzt8" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="VCykCciNYZeO4sPLSUffRp" Ids="EbnnU2sQk8tLDEOid7g3n8,BHERgsEe7IZLnZVJHHRcog" />
+        <Link Id="BsTd4DLVKcxPVyGfQBL5KO" Ids="Ktne9Ya9v4JLUMcsqTunvL,AyKqDl4vcHAOFIluxq2Fw1" />
+        <Link Id="TIW88CAH0k0N7x8cGv1Qa1" Ids="JfU0X172si5Mhx7qEIIyEt,KbRgXLepY5kPrKqeoV8XIe" />
+        <Link Id="LJbUoOt0wZOPzodC9ujaTc" Ids="Fc2G5u2qQKOMWZc5oBrHbE,RaECuQvWzb0O3Q6vser0rT" />
+        <Link Id="SCdPn120A1ULxs0QKcFVMw" Ids="QD2aIX6BQWCNMlLQIttAtR,VTixqVvoGyANfqlztKxMyF" />
+        <Link Id="PYvHc1fZ5WPPJAhNTgFsV7" Ids="MAUvi5nZRe1Mm0VmG1IKOk,S737V0wlk0DP9fLQwsepYk" />
+        <Link Id="Otxz06aDMRuO5bcATjPeEe" Ids="ONinTjn09ChOtYiJIYQxeh,E7tieWqFRXzLmUFlLptHw0" IsHidden="true" />
+        <Link Id="UTRgzMens4gN6wL6nPS58y" Ids="E7tieWqFRXzLmUFlLptHw0,TAdUIVLuuxYL504f9Jsjub" />
+        <Link Id="Nf79mRw6AVnMdGhMGlcuWM" Ids="DrLQesviJeFMMWeool2rSz,OWig54QNZU2NRlwzclRU2q" />
+        <Link Id="GrxrD9xFJK3NWMBkCibqRE" Ids="Mbz8Gd1nlwYMkiMIsyftEf,QzivgwWXrWfMkVTEasLhHj" />
+        <Link Id="TC0tG6B6Ox0Oi6iOiJPNJD" Ids="OphLkQGvMG9MPQP6RQbPP0,LTTRWF71GcEMIbO09QE4jd" />
+        <Link Id="O414jK8u5jTMnJmA3BY7uB" Ids="VTixqVvoGyANfqlztKxMyF,Q2iBTIQAKHzPafU1UfQ8RJ" />
+        <Link Id="MnfYVnchcwjLOYHCzsuqcI" Ids="GH1nAEqRAE1OuGb8L2E0BK,TH43M9DTJwEMV81O6rtusW" />
+        <Link Id="VPD24bEfaQfQbXU25gidSB" Ids="HFYC1Yp1GISN97qTcAMaZc,P5vUimHE0BvNkCQPaMuVQK" />
+        <Link Id="E3J65oLwCgTLm1l1dUI8yu" Ids="PDDQYauBHKuMNrvVKX5v8i,L0m3Hyx2UfbNLX2I2AOYYG" />
+        <Link Id="BO0B1XEQ7TjOJrPru05uga" Ids="MueGd3bGtbrMFqhEf3axOR,EF1xdBEdKAhLxvCpm1tc5P" />
+        <Link Id="IrWNL5WM03JPodIBS5CGe0" Ids="IF8Vm7pJj9JQcQPpGkJujo,SxUd6hnREadQOm6RAXIDOy" />
+        <Link Id="HlXUC0U9dzoPtrfZxIV1ay" Ids="QEh7Hh9QW3xNlsJGS8gVXW,BAJWVYTkhrQOOGa5uhHyUv" />
+        <Link Id="UWF6305ftwfNFrhisa2dfq" Ids="NCH8YvvIwoPN1rzZlQ0EfO,DbhWe7mD5tWNJmhFWgtxzH" />
+        <Link Id="Eqs0fJTMqh4N49STN2e73J" Ids="By7P3dMAqBGNBohi0geRDy,RpFCkgiQbFEOoF5zfz7BHs" />
+        <Link Id="CbFDOhGXy5mPEMAoJbl06i" Ids="BBVR7Qd5wmFLf3A2m7n85P,VWXPGLvEyIcOsy1yBsfdyS" />
+        <Link Id="HaMjjHuTbuXLBNCtq2AoWz" Ids="BBVR7Qd5wmFLf3A2m7n85P,QLXjX9fg0s9M6lb9eKMtqr" />
+        <Link Id="K0Ym0oPVVoBO0Cfn0jNhSq" Ids="TCwPyC1BhwZLB34HV5VMHt,IYcNCdWKEb4PphIsnk6MVM" />
+        <Link Id="Ol9lNxbtENxOBiny05sZke" Ids="G47lhokyhqjObWwtgJbVKX,C5jblkz5fM3MBeM2eNqDBM" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="EOvJfljAlP9NHKYNLqz0Ug" Location="VL.Skia" Version="2024.6.0" />
+  <NugetDependency Id="USdLGRlY9H0N2rLbwGqHha" Location="VL.IO.ArtNet" Version="0.0.0.0" />
+</Document>
