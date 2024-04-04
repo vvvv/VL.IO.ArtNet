@@ -1,14 +1,13 @@
 # VL.IO.ArtNet
-Support for [Art-Net](https://en.wikipedia.org/wiki/Art-Net) in VL
+Support for sending and receiving [Art-Net](https://en.wikipedia.org/wiki/Art-Net).
 
-Try it with vvvv, the visual live-programming environment for .NET  
-Download: http://visualprogramming.net
+For use with vvvv, the visual live-programming environment for .NET: http://visualprogramming.net
 
-## Using the library
-In order to use this library with VL you have to install the nuget that is available via nuget.org. For information on how to use nugets with VL, see [Managing Nugets](https://thegraybook.vvvv.org/reference/libraries/dependencies.html#manage-nugets) in the VL documentation. As described there you go to the commandline and then type:
+## Getting started
+- Shipping with vvvv
+- Usage examples and more information are included in the pack and can be found via the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html)
 
-    nuget install VL.IO.ArtNet
-
-Once the VL.IO.ArtNet nuget is installed and referenced in your VL document you'll see the category "ArtNet" under "IO" in the nodebrowser. 
-
-Demos are available via the Help Browser!
+## Contributing
+- Report issues on [the vvvv forum](https://discourse.vvvv.org/c/vvvv-gamma/28)
+- Please see our [Contribution Guide](.github/CONTRIBUTING.md)
+- For custom development requests, please [get in touch](mailto:devvvvs@vvvv.org)
