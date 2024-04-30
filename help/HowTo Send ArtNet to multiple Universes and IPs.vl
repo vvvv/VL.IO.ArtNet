@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="F47oZox8XrON2PjXJ19W7N" LanguageVersion="2024.6.0" Version="0.128">
-  <NugetDependency Id="EgRqrAtC4gnQaSz9gOQrL9" Location="VL.CoreLib" Version="2024.6.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="MzwsiYrj13MPpdVAI80i7H" LanguageVersion="2024.6.2" Version="0.128">
+  <NugetDependency Id="EgRqrAtC4gnQaSz9gOQrL9" Location="VL.CoreLib" Version="2024.6.2" />
   <Patch Id="EKZfSoOZmz7M6KX42z0oth">
     <Canvas Id="KtY9fmYEOdsQa1Ix08Xo84" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -28,7 +28,6 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ArtNet" />
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="MAbBz1wgkloOA9v0PoUr8v" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="VhgzP3L8oi6Nknq8KZSGUe" Name="Local Address" Kind="InputPin" IsHidden="true" />
             <Pin Id="Fgvgp4qLO78OVeztfTnpyj" Name="Local Port" Kind="InputPin" IsHidden="true" />
@@ -101,7 +100,6 @@
                   </CategoryReference>
                   <Choice Kind="OperationCallFlag" Name="Send" />
                 </p:NodeReference>
-                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
                 <Pin Id="OWig54QNZU2NRlwzclRU2q" Name="Input" Kind="StateInputPin" />
                 <Pin Id="QzivgwWXrWfMkVTEasLhHj" Name="Data" Kind="InputPin" />
                 <Pin Id="IYcNCdWKEb4PphIsnk6MVM" Name="Universe" Kind="InputPin" />
@@ -158,6 +156,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="EOvJfljAlP9NHKYNLqz0Ug" Location="VL.Skia" Version="2024.6.0" />
+  <NugetDependency Id="EOvJfljAlP9NHKYNLqz0Ug" Location="VL.Skia" Version="2024.6.2" />
   <NugetDependency Id="USdLGRlY9H0N2rLbwGqHha" Location="VL.IO.ArtNet" Version="0.0.0.0" />
 </Document>
