@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SfFuTIrHNxBQddPFnkruPS" LanguageVersion="2024.6.2" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="SfFuTIrHNxBQddPFnkruPS" LanguageVersion="2025.7.1-0140-gfee0e33407" Version="0.128">
   <Patch Id="HbQpTiFH5eGLcJnEC8BM55">
     <Canvas Id="Uhwx3sF7uu7O8BRuGAFHq9" DefaultCategory="IO.ArtNet" CanvasType="FullCategory">
       <Canvas Id="HzEKbFreIysPD9p6I5myD9" Name="Utils" Position="510,340" DefaultCategory="IO.ArtNet" CanvasType="Group">
@@ -421,7 +421,6 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="UdpSocket" />
               </p:NodeReference>
-              <Pin Id="MIWItHnDlUgMVFeI2h2Apk" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="JFhrka9bP9GNQUftJEkW76" Name="Local End Point" Kind="InputPin" />
               <Pin Id="CrSIbULoyw1L2lc3p200E9" Name="Bind" Kind="InputPin" DefaultValue="True" />
               <Pin Id="GjxIuLrw7peOIBggNPzYiQ" Name="Enabled" Kind="InputPin" />
@@ -494,6 +493,7 @@
               <Pin Id="IUSnFRBINwKL457EiXjA1J" Name="Value" Kind="InputPin" />
               <Pin Id="QaCvVTovLwTNAImkfuK91R" Name="Output" Kind="OutputPin" />
               <Pin Id="MurFhq5g0u9MCS6QevA0TG" Name="Value" Kind="OutputPin" />
+              <Pin Id="Pozu2pNglnUPzMkb0xAXXq" Name="Author" Kind="InputPin" IsHidden="true" />
             </Node>
             <Node Bounds="279,613,207,174" Id="PDdGzaA9MrZOwL1JH2qoUc">
               <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
@@ -540,6 +540,7 @@
               <Pin Id="Amcclx0JC2SOP5wXd4J1Wj" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="TbLG9THkfO8QMjeD3EGb04" Name="Messages" Kind="InputPin" />
               <Pin Id="IuHlCU9oTcqNtCsnQmfp44" Name="Reset" Kind="InputPin" />
+              <Pin Id="I0FGRkHQjQsMieVp3bdwh7" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="OdXz9dVecFhNKYogKJ0My3" Name="Result" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="HeGofyxMv7KOaRT7IEko6d" Bounds="1124,435" />
@@ -843,7 +844,7 @@
           <Link Id="H3eMrSRlPbeLsjreKqBO30" Ids="U5OIrnGA1yeOIx4qVuYXHw,EydCDSGDOukNI7kiS2qj2O" IsHidden="true" />
           <Patch Id="O9d5pNfgsjIPgHOn6KffrS" Name="Create (Internal)" ParticipatingElements="GI4jXCoiB5FNZeOYXOid5H,DVUPPr04Y8FMAbyqdvdo91" />
           <Patch Id="LuCdHoAKdcUPUi3YoXkCba" Name="Update (Internal)" ManuallySortedPins="true">
-            <Pin Id="UeSbLneUNKHNeWVs9qL0wO" Name="Local Address" Kind="InputPin" DefaultValue="0.0.0.0" Visibility="Optional" />
+            <Pin Id="UeSbLneUNKHNeWVs9qL0wO" Name="Local Address" Kind="InputPin" DefaultValue="127.0.0.1" />
             <Pin Id="AQb7wcjjoOwM60lxLTZ6K6" Name="Local Port" Kind="InputPin" DefaultValue="6454" Visibility="Optional" />
             <Pin Id="Pj4veGZpUizPR8yXlllTa1" Name="Remote Host" Kind="InputPin" DefaultValue="127.0.0.1">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -917,6 +918,7 @@
                 <Pin Id="HpXGMnQ2YzhMLG8jaUCB0M" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="LG9dPvJJauZLgzGlFxg7Uu" Name="Messages" Kind="InputPin" />
                 <Pin Id="FV6MeRwCqmhQRtaxyKW6Nl" Name="Reset" Kind="InputPin" />
+                <Pin Id="AqFgyhuCVDPO1pg9t5BP9j" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="Ju3nmhxXZfkPyTyUmFQpLK" Name="Result" Kind="OutputPin" />
                 <Patch Id="FHbPFzv3o58MZzzKo9rTXS" ManuallySortedPins="true">
                   <Patch Id="VJ4L6PZYxSyPp1quy6kfYv" Name="Create" ManuallySortedPins="true" />
@@ -1064,6 +1066,7 @@
                 <Pin Id="VowfzDe0ri6MLsO1zC7VlA" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="VCT2TUfyO7fM7iAmIrpR06" Name="Messages" Kind="InputPin" />
                 <Pin Id="PTjpJNn1A3UN7O3kP4a179" Name="Reset" Kind="InputPin" />
+                <Pin Id="IC6ZbQCFD5wPPu3IaDYuWK" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="P0gvWcqXC5JMJpWigHIqbA" Name="Result" Kind="OutputPin" />
                 <Patch Id="NwhSk18oFFbPHZYEd9hRTR" ManuallySortedPins="true">
                   <Patch Id="MHYHxJ4qZx6P1mh9mb5xb1" Name="Create" ManuallySortedPins="true" />
@@ -1169,6 +1172,7 @@
               <Pin Id="SDvBoTs4vesOZiNKC7t9ik" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="ECvsS5uVfJIMCsKMPRyV7d" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="HbbsLc7y2MoLlKxKAv3Glc" Name="Reset" Kind="InputPin" />
+              <Pin Id="Ox0LmOZa2SUL4MkJAbyLin" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="AyCsSuo0xYRL1hGk5qJlYN" Name="Value" Kind="OutputPin" />
               <Pin Id="DuFLHMpEfXROm97s8QcwCp" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -1229,6 +1233,7 @@
               <Pin Id="FSrrdXsg7C4Lw884xRtUAp" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="UZjcKDoS9yhOyiW4sRwpfJ" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="R6MCEzzJEoCOWXzLkkwr86" Name="Reset" Kind="InputPin" />
+              <Pin Id="VUDaIcqIB7cPiDVMPX8Ejj" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="BsBR3RtfNQ4OGJprsmz7xC" Name="Value" Kind="OutputPin" />
               <Pin Id="KAs5iiOQawZPSJBOOFhbYh" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -2316,6 +2321,7 @@
                 <Pin Id="GU1cw3iWIfQNgYAsP0AgUf" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="EVprEy60XLHP0aA09ulx6H" Name="Messages" Kind="InputPin" />
                 <Pin Id="IqIGn3DSoJBLMiDVDdOzcv" Name="Send" Kind="InputPin" />
+                <Pin Id="CznKcK49oFfLtbxRxmoHtE" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="I7h6hgZJAPiNlRxESaOrRD" Name="Result" Kind="OutputPin" />
               </Node>
               <Pad Id="VSflOK4f9IUQBavBVlLg64" Comment="Opcode High Byte" Bounds="441,163,22,15" ShowValueBox="true" isIOBox="true" Value="50">
@@ -2377,7 +2383,6 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="UdpSocket" />
                 </p:NodeReference>
-                <Pin Id="BkcOLCVkltfQVd7M0ryGso" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="FY6QU4E2xxaLC3twn2IZGK" Name="Local End Point" Kind="InputPin" />
                 <Pin Id="POJMUlwDk3eNgrnY1tbq51" Name="Bind" Kind="InputPin" DefaultValue="True" />
                 <Pin Id="DyC15mWwRyJPhZuPdYLlfR" Name="Enabled" Kind="InputPin" />
@@ -2510,6 +2515,7 @@
                 <Pin Id="ULOjYpShE4uMdVddr0TdI2" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="AJ0biDstQMnLcE8m70cA8P" Name="Messages" Kind="InputPin" />
                 <Pin Id="NSRyzXqOCl0NpfUpZsuFlW" Name="Reset" Kind="InputPin" />
+                <Pin Id="MWZdsMQXgCGPpY129Dbq2W" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="MMOkzC60ZFvOIOGkFPWx2R" Name="Result" Kind="OutputPin" />
                 <Patch Id="HNV1k4ctFzFN0KOxad7JNW" ManuallySortedPins="true">
                   <Patch Id="EolORJH1lwzNAEHvSwNz9y" Name="Create" ManuallySortedPins="true" />
@@ -2670,6 +2676,7 @@
                 <Pin Id="TLJ21u2gcYqQLDgwDPMdkc" Name="Initial Result" Kind="InputPin" />
                 <Pin Id="G7tmE8I20VYLz2Gizyvzt5" Name="Async Notifications" Kind="InputPin" />
                 <Pin Id="BBlhz0DtNW4QMDxfNUr5gD" Name="Reset" Kind="InputPin" />
+                <Pin Id="H6YUFsxpITEQM20HcMcfG7" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="LUjDE9mE6uiPjI5JmIqOjl" Name="Value" Kind="OutputPin" />
                 <Pin Id="AYKLWZRdXxJQJ65OOgzrWu" Name="On Data" Kind="OutputPin" />
               </Node>
@@ -2749,6 +2756,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="OmpXXVOyosJPBipFg4KPwS" Location="VL.CoreLib" Version="2024.6.2" />
+  <NugetDependency Id="OmpXXVOyosJPBipFg4KPwS" Location="VL.CoreLib" Version="2025.7.1-0140-gfee0e33407" />
   <NugetDependency Id="AVaCfRZZjNtLIsI3ykOKlu" Location="VL.IO.ArtNet" Version="0.0.0.0" />
 </Document>

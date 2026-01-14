@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="F47oZox8XrON2PjXJ19W7N" LanguageVersion="2024.6.0" Version="0.128">
-  <NugetDependency Id="EgRqrAtC4gnQaSz9gOQrL9" Location="VL.CoreLib" Version="2024.6.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Q9vEPaqdkGIPVlGt5k53Gh" LanguageVersion="2025.7.1-0140-gfee0e33407" Version="0.128">
+  <NugetDependency Id="EgRqrAtC4gnQaSz9gOQrL9" Location="VL.CoreLib" Version="2025.7.1-0140-gfee0e33407" />
   <Patch Id="EKZfSoOZmz7M6KX42z0oth">
     <Canvas Id="KtY9fmYEOdsQa1Ix08Xo84" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -30,7 +30,7 @@
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="MAbBz1wgkloOA9v0PoUr8v" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="VhgzP3L8oi6Nknq8KZSGUe" Name="Local Address" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VhgzP3L8oi6Nknq8KZSGUe" Name="Local Address" Kind="InputPin" />
             <Pin Id="Fgvgp4qLO78OVeztfTnpyj" Name="Local Port" Kind="InputPin" IsHidden="true" />
             <Pin Id="KbRgXLepY5kPrKqeoV8XIe" Name="Remote Host" Kind="InputPin" />
             <Pin Id="CKLZTvsFIdxQNQRVFHQWBt" Name="Remote Port" Kind="InputPin" IsHidden="true" />
@@ -40,7 +40,7 @@
             <Pin Id="EbnnU2sQk8tLDEOid7g3n8" Name="Is Open" Kind="OutputPin" />
           </Node>
           <Pad Id="BHERgsEe7IZLnZVJHHRcog" Comment="Is Open" Bounds="170,228,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="JfU0X172si5Mhx7qEIIyEt" Comment="Remote Host" Bounds="97,124,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+          <Pad Id="JfU0X172si5Mhx7qEIIyEt" Comment="Remote Host" Bounds="117,111,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -243,7 +243,7 @@
           <Pad Id="DbhWe7mD5tWNJmhFWgtxzH" Comment="On Data" Bounds="760,493,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="RpFCkgiQbFEOoF5zfz7BHs" Comment="On Data" Bounds="759,687,35,35" ShowValueBox="true" isIOBox="true" />
           <Overlay Id="KVd7LHbQCoGNgUDN0VeMwe" Name="Receive" Bounds="576,363,642,575" />
-          <Pad Id="NQG65WvmZXNLInYmdAmErZ" Bounds="338,117,330,193" ShowValueBox="true" isIOBox="true" Value="Art-Net defaults to communicate on port 6454.&#xD;&#xA;&#xD;&#xA;If you still want to target a different port, use the optional &quot;Remote Port&quot; pin on the ArtNet node.&#xD;&#xA;&#xD;&#xA;If you still need to use a different local port, use the optional &quot;Local Port&quot; pin on the ArtNet node.&#xD;&#xA;&#xD;&#xA;If you need the node to bind to a specific IP address, use the optional &quot;Local Address&quot; pin.">
+          <Pad Id="NQG65WvmZXNLInYmdAmErZ" Bounds="338,117,319,162" ShowValueBox="true" isIOBox="true" Value="Art-Net defaults to communicate on port 6454.&#xD;&#xA;&#xD;&#xA;If you still want to target a different port, use the optional &quot;Remote Port&quot; pin on the ArtNet node.&#xD;&#xA;&#xD;&#xA;If you still need to use a different local port, use the optional &quot;Local Port&quot; pin on the ArtNet node.&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -261,6 +261,20 @@
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="InsLOCwwQgINFFOD5BkMyd" Comment="Local Address" Bounds="97,80,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="VBygEI7uBhHLh2T2WWoaLN" Bounds="320,730,178,120" ShowValueBox="true" isIOBox="true" Value="⚠️ The Send node has optional inputs &quot;Remote Host&quot; and &quot;Remote Port&quot; which, when used, override the same named inputs on the main ArtNet node!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
           </Pad>
         </Canvas>
         <Patch Id="IGsxc3XzIwPQYaQb2VPutC" Name="Create" />
@@ -293,9 +307,10 @@
         <Link Id="HaMjjHuTbuXLBNCtq2AoWz" Ids="BBVR7Qd5wmFLf3A2m7n85P,QLXjX9fg0s9M6lb9eKMtqr" />
         <Link Id="K0Ym0oPVVoBO0Cfn0jNhSq" Ids="TCwPyC1BhwZLB34HV5VMHt,IYcNCdWKEb4PphIsnk6MVM" />
         <Link Id="Ol9lNxbtENxOBiny05sZke" Ids="G47lhokyhqjObWwtgJbVKX,C5jblkz5fM3MBeM2eNqDBM" />
+        <Link Id="MDlrzDujNWeLnOIz2wSyu2" Ids="InsLOCwwQgINFFOD5BkMyd,VhgzP3L8oi6Nknq8KZSGUe" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="EOvJfljAlP9NHKYNLqz0Ug" Location="VL.Skia" Version="2024.6.0" />
+  <NugetDependency Id="EOvJfljAlP9NHKYNLqz0Ug" Location="VL.Skia" Version="2025.7.1-0140-gfee0e33407" />
   <NugetDependency Id="USdLGRlY9H0N2rLbwGqHha" Location="VL.IO.ArtNet" Version="0.0.0.0" />
 </Document>
