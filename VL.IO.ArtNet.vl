@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SfFuTIrHNxBQddPFnkruPS" LanguageVersion="2025.7.1-0140-gfee0e33407" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="SfFuTIrHNxBQddPFnkruPS" LanguageVersion="2025.7.4" Version="0.128">
   <Patch Id="HbQpTiFH5eGLcJnEC8BM55">
     <Canvas Id="Uhwx3sF7uu7O8BRuGAFHq9" DefaultCategory="IO.ArtNet" CanvasType="FullCategory">
       <Canvas Id="HzEKbFreIysPD9p6I5myD9" Name="Utils" Position="510,340" DefaultCategory="IO.ArtNet" CanvasType="Group">
@@ -872,7 +872,7 @@
             <Pin Id="FRjU6MF0HvVNQZsKuHpcgY" Name="Data" Kind="InputPin" />
             <Pin Id="Nxa0V3dEDhnLAHMTTyStaR" Name="Universe" Kind="InputPin" />
             <Pin Id="VXtRUbum6W1OOTpacoYnns" Name="Remote Host" Kind="InputPin" Visibility="Optional" />
-            <Pin Id="I0pk99xf4wWL352V8N7pNu" Name="Remote Port" Kind="InputPin" Visibility="Optional" />
+            <Pin Id="I0pk99xf4wWL352V8N7pNu" Name="Remote Port" Kind="InputPin" DefaultValue="6454" Visibility="Optional" />
             <Pin Id="TFKXDHDee2WLWIxjPB8Se6" Name="Apply" Kind="InputPin" />
           </Patch>
           <Link Id="RtxcJd3Cdw2PzaILKzmcaQ" Ids="Sjz1V9so1X6M2YIaFzSn3e,UVbvP33ItEOLp48df3Cc8o" />
@@ -2756,6 +2756,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="OmpXXVOyosJPBipFg4KPwS" Location="VL.CoreLib" Version="2025.7.1-0140-gfee0e33407" />
+  <NugetDependency Id="OmpXXVOyosJPBipFg4KPwS" Location="VL.CoreLib" Version="2025.7.4" />
   <NugetDependency Id="AVaCfRZZjNtLIsI3ykOKlu" Location="VL.IO.ArtNet" Version="0.0.0.0" />
 </Document>
